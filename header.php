@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-        <title>Platea21 E-Learning Virtual</title>
+        <title>Plataforma Educativa - Cuánto Sabes de Ciencia</title>
 		<meta name="Descripcion" content="Sistema de Aprendizaje Virtual - Platea21">
 		<meta name="keywords" content="Platea21 Virtual,Platea21 Aula Virtual,Platea21 UNJBG,Platea21,UNJBG.">
 		<meta name="author" content="gorchor">

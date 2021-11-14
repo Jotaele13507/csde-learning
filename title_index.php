@@ -9,14 +9,14 @@
 							<div class="row-fluid">
 
 						<div class="span4">
-						<img class="index_logo" src="admin/images/platea21_trans.png">
+						<img class="index_logo" src="admin/images/csdr.png">
 						</div>	
 						<div class="span8">
-								<div class="title" style="margin: 0px auto;">
+								<div class="title" style="margin: 2px auto;">
 								<h3>
-							    <p style="color: #000; font-size: 35px;text-align: left">Sistema Virtual M-Learning 2019</p>
-								</h3>		
-						</div>
+							    <p style="color: #fff; font-size: 35px;text-align: left">Plataforma Educativa Cuanto Sabes de Ciencia</p>
+								</h3>	
+								</div>
 						
 			
 						</div>							
