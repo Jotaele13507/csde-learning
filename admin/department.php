@@ -32,7 +32,7 @@
 										</thead>
 										<tbody>
 													<?php
-													$user_query = mysqli_query($con,"select * from department")or die(mysql_error());
+													$user_query = mysqli_query($con,"select * from department")or die(mysqli_error());
 													while($row = mysqli_fetch_array($user_query)){
 													$id = $row['department_id'];
 													?>

@@ -41,6 +41,12 @@
                                             <input  name="ln" class="input focused" id="focusedInput" type="text" placeholder = "Apellidos" required>
                                           </div>
                                         </div>
+
+										<div class="control-group">
+                                          <div class="controls">
+                                            <input  name="ps" class="input focused" id="focusedInput" type="text" placeholder = "Contraseña" required>
+                                          </div>
+                                        </div>
 								
 										
 											<div class="control-group">

@@ -2,12 +2,13 @@
 <html class="no-js">
     <head>
         <title>Plataforma Educativa - Cuánto Sabes de Ciencia</title>
-		<meta name="Descripcion" content="Sistema de Aprendizaje Virtual - Platea21">
-		<meta name="keywords" content="Platea21 Virtual,Platea21 Aula Virtual,Platea21 UNJBG,Platea21,UNJBG.">
-		<meta name="author" content="gorchor">
+		<meta name="Descripcion" content="Plataforma Educativa - Cuánto Sabes de Ciencia">
+		<meta name="keywords" content="Cuanto sabes de, Ciencia, CSDC">
+		<meta name="author" content="Jorge Luis Sánchez">
 		<meta charset="UTF-8">
         <!-- Bootstrap -->
 				<link href="images/favicon.ico" rel="icon" type="image">
+				<link rel="icon" href="admin/images/csdr.ico">
 				<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
 				<link href="admin/bootstrap/css/font-awesome.css" rel="stylesheet" media="screen"/>
 				<link href="bootstrap/css/my_style.css" rel="stylesheet" media="screen"/>

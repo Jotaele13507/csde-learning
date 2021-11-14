@@ -5,7 +5,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-                   <a class="brand" href="#">Bienvenido a: Platea21 Sistema Virtual E-Learning 2019</a>
+                   <a class="brand" href="index.php">Bienvenido a: Cuánto Sabes de Ciencia</a>
 							<div class="nav-collapse collapse">
 								<ul class="nav pull-right">
 	

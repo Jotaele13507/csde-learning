@@ -17,7 +17,7 @@
                                         </div>
 									-->	
 									<?php
-									$query = mysqli_query($con,"select * from teacher where teacher_id = '$get_id' ")or die(mysql_error());
+									$query = mysqli_query($con,"select * from teacher where teacher_id = '$get_id' ")or die(mysqli_error());
 									$row = mysqli_fetch_array($query);
 									?>
 										
@@ -26,7 +26,7 @@
                                           <div class="controls">
                                             <select name="department"  class="chzn-select"required>
 											<?php
-											$query_teacher = mysqli_query($con,"select * from teacher join  department")or die(mysql_error());
+											$query_teacher = mysqli_query($con,"select * from teacher join  department")or die(mysqli_error());
 											$row_teacher = mysqli_fetch_array($query_teacher);
 											
 											?>
@@ -81,8 +81,8 @@
                                 $department_id = $_POST['department'];
 								
 								
-								$query = mysqli_query($con,"select * from teacher where firstname = '$firstname' and lastname = '$lastname' ")or die(mysql_error());
-								$count = mysql_num_rows($query);
+								$query = mysqli_query($con,"select * from teacher where firstname = '$firstname' and lastname = '$lastname' ")or die(mysqli_error());
+								$count = mysqli_num_rows($query);
 								
 								if ($count > 1){ ?>
 								<script>
@@ -91,7 +91,7 @@
 								<?php
 								}else{
 								
-								mysqli_query($con,"update teacher set firstname = '$firstname' , lastname = '$lastname' , department_id = '$department_id' where teacher_id = '$get_id' ")or die(mysql_error());	
+								mysqli_query($con,"update teacher set firstname = '$firstname' , lastname = '$lastname' , department_id = '$department_id' where teacher_id = '$get_id' ")or die(mysqli_error());	
 								
 								?>
 								<script>
