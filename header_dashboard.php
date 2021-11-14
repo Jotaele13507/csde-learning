@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-        <title>Platea21 E-Learning Virtual</title>
-		<meta name="Descripcion" content="Sistema de Aprendizaje Virtual - Platea21">
-		<meta name="keywords" content="Platea21 Virtual,Platea21 Aula Virtual,Platea21 UNJBG,Platea21,UNJBG.">
-		<meta name="author" content="gorchor">
+        <title>Cuánto Sabes de Ciencia</title>
+		<meta name="Descripcion" content="Plataforma Educativa - Cuánto Sabes de Ciencia">
+		<meta name="keywords" content="Cuanto sabes de, Ciencia, CSDC">
+		<meta name="author" content="Jorge Luis Sánchez">
 		<meta charset="UTF-8">
         <!-- Bootstrap -->
 		<link href="admin/images/favicon.ico" rel="icon" type="image">

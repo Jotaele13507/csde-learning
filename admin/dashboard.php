@@ -107,7 +107,7 @@
 								
                                 <div class="span3">
                                     <div class="chart" data-percent="<?php echo $count_subject; ?>"><?php echo $count_subject; ?></div>
-                                    <div class="chart-bottom-heading"><strong>Practicas</strong>
+                                    <div class="chart-bottom-heading"><strong>Cursos</strong>
 
                                     </div>
                                 </div>
