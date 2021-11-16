@@ -21,13 +21,13 @@
 						success: function(html){
 						if(html=='true')
 						{
-						$.jGrowl("Bienvenido al Platea21: Sistema E-Learning", { header: 'Access Granted' });
+						$.jGrowl("Bienvenido: Plataforma Educativa - Cuánto Sabes de Ciencias", { header: 'Inicio de Sesión Exitoso' });
 						var delay = 2000;
 							setTimeout(function(){ window.location = 'dashboard.php'  }, delay);  
 						}
 						else
 						{
-						$.jGrowl("Por favor verifique su Usuario y Contraseña", { header: 'Login Failed' });
+						$.jGrowl("Por favor verifique su Usuario y Contraseña", { header: 'Inicio de Sesión Fallido' });
 						}
 						}
 						

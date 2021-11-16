@@ -28,13 +28,13 @@ echo $input_name ;
 
 if ($input_name == ""){
 
-			$name_notification  = 'Add Assignment file name'." ".'<b>'.$name.'</b>';
+			$name_notification  = 'Add Archivo Descargable file name'." ".'<b>'.$name.'</b>';
 	   
-                mysqli_query($con,"INSERT INTO assignment (fdesc,fdatein,teacher_id,class_id,fname) VALUES ('$filedesc',NOW(),'$session_id','$id_class','$name')")or die(mysqli_error());
-				 mysqli_query($con,"insert into notification (teacher_class_id,notification,date_of_notification,link) value('$get_id','$name_notification',NOW(),'assignment_student.php')")or die(mysqli_error());               
+                mysqli_query($con,"INSERT INTO files (fdesc,fdatein,teacher_id,class_id,fname) VALUES ('$filedesc',NOW(),'$session_id','$id_class','$name')")or die(mysqli_error());
+				 mysqli_query($con,"insert into notification (teacher_class_id,notification,date_of_notification,link) value('$get_id','$name_notification',NOW(),'downloadable_student.php')")or die(mysqli_error());               
 ?>            
 			<script>
-				window.location = 'assignment.php<?php echo '?id='.$get_id;  ?>';
+				window.location = 'downloadable.php<?php echo '?id='.$get_id;  ?>';
 			</script>
 <?php
 }else{
@@ -50,7 +50,7 @@ if ($input_name == ""){
    } */ 
    $newname = "admin/uploads/" . $rd2 . "_" . $filename;
    
-		$name_notification  = 'Add Assignment file name'." ".'<b>'.$name.'</b>';
+		$name_notification  = 'Agregar Nombre al Archivo'." ".'<b>'.$name.'</b>';
         //Check if the file with the same name is already exists on the server
 
             //Attempt to move the uploaded file to it's new place
@@ -58,8 +58,8 @@ if ($input_name == ""){
                 //successful upload
                 // echo "It's done! The file has been saved as: ".$newname;	
                 $con = new mysqli('localhost','root','','e_learning')or die("Could not connect to mysql".mysqli_error($con));	   
-                $qry2 = mysqli_query($con,"insert into assignment (fdesc,floc,fdatein,teacher_id,class_id,fname) VALUES ('$filedesc','$newname',NOW(),'$session_id','$id_class','$name')") or die (mysqli_error());
-				$query = mysqli_query($con,"insert into notification (teacher_class_id,notification,date_of_notification,link) value('$get_id','$name_notification',NOW(),'assignment_student.php')")or die(mysqli_error());               
+                $qry2 = mysqli_query($con,"insert into files (fdesc,floc,fdatein,teacher_id,class_id,fname) VALUES ('$filedesc','$newname',NOW(),'$session_id','$id_class','$name')") or die (mysqli_error());
+				$query = mysqli_query($con,"insert into notification (teacher_class_id,notification,date_of_notification,link) value('$get_id','$name_notification',NOW(),'downloadable_student.php')")or die(mysqli_error());               
 			   //$result = @mysql_query($qry);
                 $result2 = $connector->query($qry2);
                 if ($result2) {
@@ -71,7 +71,7 @@ if ($input_name == ""){
                         ?>
 
                      <script>
-window.location = 'assignment.php<?php echo '?id='.$get_id;  ?>';
+window.location = 'downloadable.php<?php echo '?id='.$get_id;  ?>';
 					</script>
                         <?php
 

@@ -5,7 +5,7 @@
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="#">Learning Management System</a>
+                    <a class="brand" href="#">Plataforma Educativa - Cuánto Sabes de Ciencia</a>
                     <div class="nav-collapse collapse">
                  
                     </div>

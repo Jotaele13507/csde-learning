@@ -14,7 +14,7 @@ function DbConnector(){
         $pass = '';
 
         // Connect to the database
-        $this->link = mysqli_connect($host, $user, $pass, $db);
+        $con = new mysqli($host, $user, $pass, $db);
         mysqli_select_db($db);
 		mysqli_query($con,"sET NAMES 'utf8'");
         register_shutdown_function(array(&$this, 'close'));

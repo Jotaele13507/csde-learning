@@ -4,7 +4,7 @@
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
 					<span class="icon-bar"></span><span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="#">Bienvenido a: Platea21 Sistema Virtual E-Learning 2019</a>
+                <a class="brand" href="#">Cuánto Sabes de Ciencia - Panel de Estudiante</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav pull-right">
 							<?php $query= mysqli_query($con,"select * from student where student_id = '$session_id'")or die(mysqli_error());

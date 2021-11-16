@@ -36,12 +36,14 @@
 											</div>
 										</div>
 											<div class="control-group">
-											<label class="control-label" for="inputPassword">Semestre</label>
+											<label class="control-label" for="inputPassword">Trimestre</label>
 											<div class="controls">
 												<select name="semester">
 													<option></option>
-													<option>1st</option>
-													<option>2nd</option>
+													<option>1ro</option>
+													<option>2do</option>
+													<option>3ro</option>
+													<option>4to</option>
 												</select>
 											</div>
 										</div>

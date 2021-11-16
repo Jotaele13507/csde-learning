@@ -31,6 +31,12 @@
                                             </select>
                                           </div>
                                         </div>
+
+                    <div class="control-group">
+                                          <div class="controls">
+                                            <input class="input focused" name="username" id="focusedInput" type="text" placeholder = "Codigo 6 Digitos">
+                                          </div>
+                                        </div>
 										
 										<div class="control-group">
                                           <div class="controls">
@@ -44,7 +50,11 @@
                                           </div>
                                         </div>
 										
-										
+                    <div class="control-group">
+                                          <div class="controls">
+                                            <input class="input focused" name="password" id="focusedInput" type="text" placeholder = "Password">
+                                          </div>
+                                        </div>
 									
 											<div class="control-group">
                                           <div class="controls">
@@ -63,13 +73,15 @@
 					    <?php
                             if (isset($_POST['save'])) {
                            
+                                $username = $_POST['username'];
                                 $firstname = $_POST['firstname'];
                                 $lastname = $_POST['lastname'];
                                 $department_id = $_POST['department'];
+                                $password = $_POST['password'];
 								
 								
 								$query = mysqli_query($con,"select * from teacher where firstname = '$firstname' and lastname = '$lastname' ")or die(mysql_error());
-								$count = mysql_num_rows($query);
+								$count = mysqli_num_rows($query);
 								
 								if ($count > 0){ ?>
 								<script>
@@ -78,9 +90,9 @@
 								<?php
 								}else{
 
-                                mysqli_query($con,"insert into teacher (firstname,lastname,location,department_id)
-								values ('$firstname','$lastname','uploads/NO-IMAGE-AVAILABLE.jpg','$department_id')         
-								") or die(mysql_error()); ?>
+                                mysqli_query($con,"insert into teacher (username,password,firstname,lastname,location,department_id)
+								values ('$username','$password','$firstname','$lastname','uploads/NO-IMAGE-AVAILABLE.jpg','$department_id')         
+								") or die(mysqli_error()); ?>
 								<script>
 							 	window.location = "teachers.php"; 
 								</script>

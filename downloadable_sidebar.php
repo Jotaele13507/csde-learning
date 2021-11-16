@@ -7,7 +7,7 @@
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
-								<form class="" id="add_downloadble" method="post" enctype="multipart/form-data" name="upload" >
+								<form class="" action="downloadable_save.php<?php echo '?id='.$get_id; ?>" method="post" enctype="multipart/form-data" name="upload" >
                         <div class="control-group">
                             <label class="control-label" for="inputEmail">Archivo:</label>
                             <div class="controls">
@@ -40,33 +40,9 @@
                         </div>
                     </form>
 					
-											<script>
-			jQuery(document).ready(function($){
-				$("#add_downloadble").submit(function(e){
-					$.jGrowl("Uploading File Please Wait......", { sticky: true });
-					e.preventDefault();
-					var _this = $(e.target);
-					var formData = new FormData($(this)[0]);
-					$.ajax({
-						type: "POST",
-						url: "upload_save.php",
-						data: formData,
-						success: function(html){
-							$.jGrowl("File Successfully  Added", { header: 'File Added' });
-							window.location = 'downloadable.php<?php echo '?id='.$get_id; ?>';
-						},
-						cache: false,
-						contentType: false,
-						processData: false
-					});
-				});
-			});
-			</script>	
+												
 								</div>
                             </div>
                         </div>
                         <!-- /block -->
 						
-
-	</div>
-</div>

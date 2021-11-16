@@ -13,7 +13,7 @@
                         <!-- block -->
                         <div id="block_bg" class="block">
                             <div class="navbar navbar-inner block-header">
-                                <div class="muted pull-left">Teacher List</div>
+                                <div class="muted pull-left">Lista de Profesores</div>
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
@@ -27,8 +27,8 @@
                                     <th>Foto</th>
                                     <th>Nombre</th>
                                     <th>Usuario</th>
-
-                                    <th></th>
+                                    <th>Editar </th>
+                                    <th>Activar</th>
                                 </tr>
 										</thead>
 										<tbody>
@@ -46,7 +46,7 @@
                                     <td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td> 
                                     <td><?php echo $row['username']; ?></td> 
                                
-									<td width="50"><a href="edit_teacher.php<?php echo '?id='.$id; ?>" class="btn btn-success"><i class="icon-pencil"></i></a></td>
+									<td width="120"><a href="edit_teacher.php<?php echo '?id='.$id; ?>" class="btn btn-success"><i class="icon-pencil"></i> Editar</a></td>
 									<?php if ($teacher_stat == 'Activated' ){ ?>
 									<td width="120"><a href="de_activate.php<?php echo '?id='.$id; ?>" class="btn btn-danger"><i class="icon-remove"></i> Desactivar</a></td>
 									<?php }else{ ?>

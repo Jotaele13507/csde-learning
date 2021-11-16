@@ -24,12 +24,12 @@
 									success: function(html){
 									if(html=='true')
 									{
-									$.jGrowl("Cargando Archivo, Espere Por Favor......", { sticky: true });
-									$.jGrowl("Bienvenido Platea21 E-Learning", { header: 'Acceso Permitido' });
+									$.jGrowl("Cargando Perfil de Usuario, Espere Por Favor......", { sticky: true });
+									$.jGrowl("Bienvenido - Cuánto Sabes de Ciencia", { header: 'Inicio Sesión Exitoso' });
 									var delay = 1000;
 										setTimeout(function(){ window.location = 'dasboard_teacher.php'  }, delay);  
 									}else if (html == 'true_student'){
-										$.jGrowl("Bienvenido Platea21 - Sistema E-Learning", { header: 'Acceso Permitido' });
+										$.jGrowl("Bienvenido - Cuánto Sabes de Ciencia", { header: 'Inicio Sesión Exitoso' });
 									var delay = 1000;
 										setTimeout(function(){ window.location = 'student_notification.php'  }, delay);  
 									}else
