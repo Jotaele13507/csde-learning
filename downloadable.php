@@ -49,8 +49,7 @@
 								<tr>
 										 <td><?php echo $row['fdatein']; ?></td>
                                          <td><?php  echo $row['fname']; ?></td>
-                                         <td><?php echo $row['fdesc']; ?></td>  
-										 <td><?php echo $row['file_id']; ?></td>                                                                                                             
+                                         <td><?php echo $row['fdesc']; ?></td>                                                                                                       
 										
 
 									   
