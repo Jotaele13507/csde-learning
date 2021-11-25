@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-11-2021 a las 18:11:33
+-- Tiempo de generación: 25-11-2021 a las 16:41:46
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 8.0.12
 
@@ -58,7 +58,8 @@ INSERT INTO `activity_log` (`activity_log_id`, `username`, `date`, `action`) VAL
 (17, 'admin', '2021-11-14 14:07:01', 'Edit Subject CIENCIAS'),
 (18, 'admin', '2021-11-16 07:13:05', 'Agregar Periodo 2019'),
 (19, 'admin', '2021-11-16 08:03:53', 'Agregar Curso Ciencia'),
-(20, 'admin', '2021-11-16 08:12:08', 'Agregar Periodo 2021');
+(20, 'admin', '2021-11-16 08:12:08', 'Agregar Periodo 2021'),
+(21, 'admin', '2021-11-17 10:02:52', 'Edit Subject Ciencia');
 
 -- --------------------------------------------------------
 
@@ -112,32 +113,9 @@ CREATE TABLE `assignment` (
 --
 
 INSERT INTO `assignment` (`assignment_id`, `floc`, `fdatein`, `fdesc`, `teacher_id`, `class_id`, `fname`) VALUES
-(2, 'uploads/6843_File_Doc3.docx', '2013-10-11 01:24:32', 'fasfasf', 13, 36, 'Assignment number 1'),
-(3, 'uploads/3617_File_login.mdb', '2013-10-28 19:35:28', 'q', 9, 80, 'q'),
-(4, 'admin/uploads/7146_File_normalization.ppt', '2013-10-30 18:48:15', 'fsaf', 9, 95, 'fsaf'),
-(5, 'admin/uploads/7784_File_ABSTRACT.docx', '2013-10-30 18:48:33', 'fsaf', 9, 95, 'dsaf'),
-(6, 'admin/uploads/4536_File_ABSTRACT.docx', '2013-10-30 18:53:32', 'file', 9, 95, 'abstract'),
-(10, 'admin/uploads/2209_File_598378_543547629007198_436971088_n.jpg', '2013-11-01 13:13:18', 'fsafasf', 9, 95, 'Assignment#2'),
-(11, 'admin/uploads/1511_File_bootstrap.css', '2013-11-01 13:18:25', 'sdsa', 9, 95, 'css'),
-(12, 'admin/uploads/4309_File_new  2.txt', '2013-11-17 23:21:46', 'test', 12, 145, 'test'),
-(13, 'admin/uploads/5901_File_IS 112-Personal Productivity Using IS.doc', '2013-11-18 16:59:35', 'q', 12, 145, 'q'),
-(15, 'admin/uploads/7077_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-25 10:38:45', 'afs', 18, 159, 'dasf'),
-(16, 'admin/uploads/8470_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-25 10:39:19', 'test', 18, 160, 'assign1'),
-(17, 'admin/uploads/2840_File_IMG_0698.jpg', '2013-11-25 15:53:20', 'q', 12, 161, 'q'),
-(19, '', '2013-12-07 20:11:39', 'kevin test', 12, 162, ''),
-(20, '', '2013-12-07 20:26:43', 'dasddsd', 12, 145, ''),
-(21, '', '2013-12-07 20:26:43', 'dasddsd', 12, 162, ''),
-(22, '', '2013-12-07 20:27:18', 'dasffsafsaf', 12, 162, ''),
-(23, '', '2013-12-07 20:33:11', 'test', 12, 162, ''),
-(24, 'admin/uploads/7053_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-12-07 20:39:05', 'kevin', 12, 0, 'kevin'),
-(25, 'admin/uploads/2417_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-12-07 20:41:10', 'kevin', 12, 0, 'kevin'),
-(26, 'admin/uploads/8095_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-12-07 20:43:25', 'kevin', 12, 0, 'kevin'),
-(27, 'admin/uploads/4089_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-12-07 20:47:48', 'fasfafaf', 12, 0, 'fasf'),
-(28, 'admin/uploads/2948_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-12-07 20:48:59', 'dasdasd', 12, 0, 'dasd'),
-(29, 'admin/uploads/5971_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-12-07 20:50:47', 'dasdasd', 12, 0, 'dsad'),
-(30, 'admin/uploads/6926_File_Resume.docx', '2014-02-13 11:27:59', 'q', 12, 167, 'q'),
-(35, 'admin/uploads/2927_File_09 - Prem - Ciencias Naturales_0.pdf', '2021-11-15 14:26:54', 'c', 5, 189, 'c'),
-(36, 'admin/uploads/6849_File_khyzyl-saleem-r32-new-76-finalweb (1).jpg', '2021-11-15 20:01:42', 'run', 5, 189, 'carro');
+(53, 'admin/uploads/6002_File_Práctica2.docx', '2021-11-17 11:32:07', 'Práctica #2 sobre la influencia del ambiente en los seres humanos.', 23, 192, 'Práctica #2 '),
+(54, 'admin/uploads/9831_File_Práctica3.docx', '2021-11-17 11:33:01', 'Práctica #3 sobre las Ondas', 23, 192, 'Práctica #3'),
+(55, 'admin/uploads/2396_File_Práctica4.docx', '2021-11-17 11:33:42', 'sobre el origen del sistema solar.', 23, 192, 'Práctica #4');
 
 -- --------------------------------------------------------
 
@@ -156,7 +134,9 @@ CREATE TABLE `class` (
 
 INSERT INTO `class` (`class_id`, `class_name`) VALUES
 (29, '9° A'),
-(30, '9° B');
+(30, '9° B'),
+(31, '9° C'),
+(32, '9° D');
 
 -- --------------------------------------------------------
 
@@ -180,7 +160,8 @@ INSERT INTO `class_quiz` (`class_quiz_id`, `teacher_class_id`, `quiz_time`, `qui
 (14, 167, 3600, 3),
 (15, 167, 1800, 3),
 (16, 185, 900, 0),
-(17, 188, 300, 7);
+(17, 188, 300, 7),
+(18, 192, 300, 8);
 
 -- --------------------------------------------------------
 
@@ -201,7 +182,8 @@ CREATE TABLE `class_subject_overview` (
 INSERT INTO `class_subject_overview` (`class_subject_overview_id`, `teacher_class_id`, `content`) VALUES
 (1, 167, '<p>Chapter&nbsp; 1</p>\r\n\r\n<p>Cha</p>\r\n'),
 (2, 188, '<p>Curso de Historia</p>\r\n'),
-(3, 189, '<ul>\r\n	<li style=\"text-align: justify;\">Analizar los procesos estructuras y leyes que intervienen en la reproducci&oacute;n y los aportes de la tecnolog&iacute;a y la Ciencia para la aplicaci&oacute;n de m&eacute;todos detecci&oacute;n de problemas de selecci&oacute;n y reproducci&oacute;n de las especies.</li>\r\n	<li style=\"text-align: justify;\">Reconocer los desequilibrios que existen en la naturaleza a causa de la relaci&oacute;n ser humano,medio ambiente y la importancia de la Tecnolog&iacute;a, la medicina, los organismos de salud y la Educaci&oacute;n en la prevenci&oacute;n, control y tratamiento de enfermedades funcionales mentales, infecciosas y otras.</li>\r\n	<li style=\"text-align: justify;\">Relacionar la energ&iacute;a con las fuerzas din&aacute;micas que permiten mover las m&aacute;quinas, los cuerpos, el aire, el agua y otros materiales en el planeta Tierra.</li>\r\n	<li style=\"text-align: justify;\">Comprender la propagaci&oacute;n de la energ&iacute;a a trav&eacute;s del comportamiento y caracter&iacute;sticas de los diferentes tipos de ondas mec&aacute;nicas, medios de transmisi&oacute;n y &oacute;rganos de recepci&oacute;n.</li>\r\n	<li style=\"text-align: justify;\">Conocer las teor&iacute;as que intentan explicar los or&iacute;genes del Universo, del Sistema Solar, del Planeta Tierra, de la vida y del ser humano en el planeta que vivimos.</li>\r\n</ul>\r\n');
+(3, 189, '<ul>\r\n	<li style=\"text-align: justify;\">Analizar los procesos estructuras y leyes que intervienen en la reproducci&oacute;n y los aportes de la tecnolog&iacute;a y la Ciencia para la aplicaci&oacute;n de m&eacute;todos detecci&oacute;n de problemas de selecci&oacute;n y reproducci&oacute;n de las especies.</li>\r\n	<li style=\"text-align: justify;\">Reconocer los desequilibrios que existen en la naturaleza a causa de la relaci&oacute;n ser humano,medio ambiente y la importancia de la Tecnolog&iacute;a, la medicina, los organismos de salud y la Educaci&oacute;n en la prevenci&oacute;n, control y tratamiento de enfermedades funcionales mentales, infecciosas y otras.</li>\r\n	<li style=\"text-align: justify;\">Relacionar la energ&iacute;a con las fuerzas din&aacute;micas que permiten mover las m&aacute;quinas, los cuerpos, el aire, el agua y otros materiales en el planeta Tierra.</li>\r\n	<li style=\"text-align: justify;\">Comprender la propagaci&oacute;n de la energ&iacute;a a trav&eacute;s del comportamiento y caracter&iacute;sticas de los diferentes tipos de ondas mec&aacute;nicas, medios de transmisi&oacute;n y &oacute;rganos de recepci&oacute;n.</li>\r\n	<li style=\"text-align: justify;\">Conocer las teor&iacute;as que intentan explicar los or&iacute;genes del Universo, del Sistema Solar, del Planeta Tierra, de la vida y del ser humano en el planeta que vivimos.</li>\r\n</ul>\r\n'),
+(4, 192, '<ul>\r\n	<li style=\"text-align: justify;\">Analizar los procesos estructuras y leyes que intervienen en la reproducci&oacute;n y los aportes de la tecnolog&iacute;a y la Ciencia para la aplicaci&oacute;n de m&eacute;todos detecci&oacute;n de problemas de selecci&oacute;n y reproducci&oacute;n de las especies.&nbsp;</li>\r\n	<li style=\"text-align: justify;\">Reconocer los desequilibrios que existen en la naturaleza a causa de la relaci&oacute;n ser humano - medio ambiente y la importancia de la Tecnolog&iacute;a, la medicina, los organismos de salud y la Educaci&oacute;n en la prevenci&oacute;n, control y tratamiento de enfermedades funcionales mentales, infecciosas y otras.</li>\r\n	<li style=\"text-align: justify;\">Relacionar la energ&iacute;a con las fuerzas din&aacute;micas que permiten mover las m&aacute;quinas, los cuerpos, el aire, el agua y otros materiales en el planeta Tierra.</li>\r\n	<li style=\"text-align: justify;\">Comprender la propagaci&oacute;n de la energ&iacute;a a trav&eacute;s del comportamiento y caracter&iacute;sticas de los diferentes tipos de ondas mec&aacute;nicas, medios de transmisi&oacute;n y &oacute;rganos de recepci&oacute;n.</li>\r\n	<li style=\"text-align: justify;\">Conocer las teor&iacute;as que intentan explicar los or&iacute;genes del Universo, del Sistema Solar, del Planeta Tierra, de la vida y del ser humano en el planeta que vivimos.&nbsp;</li>\r\n</ul>\r\n');
 
 -- --------------------------------------------------------
 
@@ -275,7 +257,9 @@ INSERT INTO `event` (`event_id`, `event_title`, `teacher_class_id`, `date_start`
 (15, 'Long Test', 113, '12/05/2013', '12/06/2013'),
 (17, 'sdasf', 147, '11/16/2013', '11/16/2013'),
 (18, 'Practica #1', 188, '11/15/2021', '11/15/2021'),
-(19, 'Clase del cuerpo humano', 189, '11/16/2021', '11/16/2021');
+(19, 'Clase del cuerpo humano', 189, '11/16/2021', '11/16/2021'),
+(20, 'Entrega de Práctica #1', 192, '11/19/2021', '11/19/2021'),
+(21, 'Es día libre', 192, '11/18/2021', '11/18/2021');
 
 -- --------------------------------------------------------
 
@@ -290,9 +274,15 @@ CREATE TABLE `files` (
   `fdesc` varchar(100) NOT NULL,
   `teacher_id` int(11) NOT NULL,
   `class_id` int(11) NOT NULL,
-  `fname` varchar(100) NOT NULL,
-  `uploaded_by` varchar(100) NOT NULL
+  `fname` varchar(100) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `files`
+--
+
+INSERT INTO `files` (`file_id`, `floc`, `fdatein`, `fdesc`, `teacher_id`, `class_id`, `fname`) VALUES
+(149, 'admin/uploads/7588_File_09 - Prem - Ciencias Naturales_0.pdf', '2021-11-17 09:03:31', 'Documento que contiene todos los temas a abordar en el trimestre.', 23, 192, 'Guía 9no Grado ');
 
 -- --------------------------------------------------------
 
@@ -408,7 +398,42 @@ INSERT INTO `notification` (`notification_id`, `teacher_class_id`, `notification
 (28, 189, 'Add Assignment file name <b>carro</b>', '2021-11-15 20:01:42', 'assignment_student.php'),
 (29, 189, 'Add Annoucements', '2021-11-15 20:28:38', 'announcements_student.php'),
 (30, 192, 'Add Assignment file name <b>s</b>', '2021-11-16 10:00:51', 'assignment_student.php'),
-(31, 192, 'Add Assignment file name <b>Z</b>', '2021-11-16 11:53:19', 'assignment_student.php');
+(31, 192, 'Add Assignment file name <b>Z</b>', '2021-11-16 11:53:19', 'assignment_student.php'),
+(32, 192, 'Add Assignment file name <b>Práctica #1</b>', '2021-11-16 15:55:22', 'assignment_student.php'),
+(33, 192, 'Add Assignment file name <b>Práctica #2</b>', '2021-11-16 16:35:34', 'assignment_student.php'),
+(34, 192, 'Add Assignment file name <b>Práctica #3</b>', '2021-11-16 17:08:48', 'assignment_student.php'),
+(35, 192, 'Agregar Nombre al Archivo <b>dsasd</b>', '2021-11-16 17:20:07', 'downloadable_student.php'),
+(36, 192, 'Agregar Nombre al Archivo <b>dsasd</b>', '2021-11-16 17:20:10', 'downloadable_student.php'),
+(37, 192, 'Agregar Nombre al Archivo <b>dsasd</b>', '2021-11-16 17:21:09', 'downloadable_student.php'),
+(38, 192, 'Agregar Nombre al Archivo <b>dsasd</b>', '2021-11-16 17:21:12', 'downloadable_student.php'),
+(39, 192, 'Agregar Nombre al Archivo <b>dsasd</b>', '2021-11-16 17:21:58', 'downloadable_student.php'),
+(40, 192, 'Agregar Nombre al Archivo <b>dsasd</b>', '2021-11-16 17:22:00', 'downloadable_student.php'),
+(41, 192, 'Agregar Nombre al Archivo <b>Guía 9no Grado </b>', '2021-11-16 17:25:03', 'downloadable_student.php'),
+(42, 192, 'Agregar Nombre al Archivo <b>sdfs</b>', '2021-11-16 17:31:05', 'downloadable_student.php'),
+(43, 192, 'Add Assignment file name <b>ghfg</b>', '2021-11-16 17:39:13', 'assignment_student.php'),
+(44, 192, 'Add Assignment file name <b>sdfdsd</b>', '2021-11-16 17:42:09', 'assignment_student.php'),
+(45, 192, 'Agregar Nombre al Archivo <b>sdfs</b>', '2021-11-16 17:42:24', 'downloadable_student.php'),
+(46, 192, 'Agregar Nombre al Archivo <b>Guía 9no Grado </b>', '2021-11-16 17:49:44', 'downloadable_student.php'),
+(47, 192, 'Agregar Nombre al Archivo <b>Guía 9no Grado </b>', '2021-11-16 17:53:03', 'downloadable_student.php'),
+(48, 192, 'Agregar Nombre al Archivo <b>Guía 9no Grado </b>', '2021-11-17 09:03:31', 'downloadable_student.php'),
+(49, 192, 'Add Assignment file name <b>Practica #1</b>', '2021-11-17 09:08:12', 'assignment_student.php'),
+(50, 192, 'Add Assignment file name <b>Práctica #2</b>', '2021-11-17 09:11:13', 'assignment_student.php'),
+(51, 192, 'Add Assignment file name <b>Práctica #3</b>', '2021-11-17 09:12:38', 'assignment_student.php'),
+(52, 192, 'Add Assignment file name <b>Práctica #4</b>', '2021-11-17 09:14:41', 'assignment_student.php'),
+(53, 192, 'Add Annoucements', '2021-11-17 10:12:02', 'announcements_student.php'),
+(54, 192, 'Add Annoucements', '2021-11-17 10:15:37', 'announcements_student.php'),
+(55, 192, 'Add Annoucements', '2021-11-17 10:17:10', 'announcements_student.php'),
+(56, 192, 'Add Annoucements', '2021-11-17 10:19:40', 'announcements_student.php'),
+(57, 192, 'Add Annoucements', '2021-11-17 10:21:05', 'announcements_student.php'),
+(58, 192, 'Add Practice Quiz file', '2021-11-17 10:35:22', 'student_quiz_list.php'),
+(59, 192, 'Add Assignment file name <b>sdfs</b>', '2021-11-17 11:29:26', 'assignment_student.php'),
+(60, 192, 'Add Assignment file name <b>Practica #1</b>', '2021-11-17 11:29:59', 'assignment_student.php'),
+(61, 192, 'Add Assignment file name <b>Práctica #2</b>', '2021-11-17 11:30:51', 'assignment_student.php'),
+(62, 192, 'Add Assignment file name <b>Práctica #2</b>', '2021-11-17 11:31:05', 'assignment_student.php'),
+(63, 192, 'Add Assignment file name <b>Práctica #2</b>', '2021-11-17 11:31:08', 'assignment_student.php'),
+(64, 192, 'Add Assignment file name <b>Práctica #2 </b>', '2021-11-17 11:32:07', 'assignment_student.php'),
+(65, 192, 'Add Assignment file name <b>Práctica #3</b>', '2021-11-17 11:33:01', 'assignment_student.php'),
+(66, 192, 'Add Assignment file name <b>Práctica #4</b>', '2021-11-17 11:33:42', 'assignment_student.php');
 
 -- --------------------------------------------------------
 
@@ -509,7 +534,8 @@ INSERT INTO `quiz` (`quiz_id`, `quiz_title`, `quiz_description`, `date_added`, `
 (3, 'Sample Test', 'Test', '2013-12-03 23:01:56', 12),
 (4, 'Chapter 1', 'topics', '2013-12-13 01:51:02', 14),
 (5, 'test3', '123', '2014-01-16 04:12:07', 12),
-(6, 'Examen 01', 'Examen 01 TIC', '2016-10-26 17:31:41', 15);
+(6, 'Examen 01', 'Examen 01 TIC', '2016-10-26 17:31:41', 15),
+(8, 'Examen #1 - sobre la Reproducción y Desarrollo hum', '', '2021-11-17 10:34:11', 23);
 
 -- --------------------------------------------------------
 
@@ -535,7 +561,8 @@ INSERT INTO `quiz_question` (`quiz_question_id`, `quiz_id`, `question_text`, `qu
 (33, 5, '<p>q</p>\r\n', 2, 0, '2014-01-17 04:15:03', 'False'),
 (34, 3, '<p>Php Stands for ?</p>\r\n', 1, 0, '2014-01-17 12:25:17', 'C'),
 (35, 3, '<p>Echo is a Php code that display the output.</p>\r\n', 2, 0, '2014-01-17 12:26:18', 'True'),
-(36, 7, '<p>marca</p>\r\n', 1, 0, '2021-11-13 17:01:09', 'A');
+(36, 7, '<p>marca</p>\r\n', 1, 0, '2021-11-13 17:01:09', 'A'),
+(37, 8, '<p>1. Perro y lobo dan origen al perro lobo?</p>\r\n', 2, 0, '2021-11-17 10:35:01', 'False');
 
 -- --------------------------------------------------------
 
@@ -572,6 +599,19 @@ CREATE TABLE `student` (
   `status` varchar(100) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `student`
+--
+
+INSERT INTO `student` (`student_id`, `firstname`, `lastname`, `class_id`, `username`, `password`, `location`, `status`) VALUES
+(221, 'Dahlia', 'Hill', 29, '530085', '123.abc.', 'uploads/jorge.jpg', 'Registered'),
+(222, 'Isadora', 'Mcconnell', 29, '769643', '123.abc.', 'uploads/NO-IMAGE-AVAILABLE.jpg', 'Registered'),
+(223, 'Candice', 'Chaney', 29, '514940', '123.abc.', 'uploads/NO-IMAGE-AVAILABLE.jpg', 'Registered'),
+(224, 'Logan', 'Diaz', 30, '256444', '123.abc.', 'uploads/NO-IMAGE-AVAILABLE.jpg', 'Registered'),
+(225, 'Audra', 'Colon', 30, '580690', '123.abc.', 'uploads/NO-IMAGE-AVAILABLE.jpg', 'Registered'),
+(226, 'Jonas', 'Lindsay', 30, '357551', '123.abc.', 'uploads/NO-IMAGE-AVAILABLE.jpg', 'Registered'),
+(227, 'Perry', 'Matthews', 31, '860270', '123.abc.', 'uploads/NO-IMAGE-AVAILABLE.jpg', 'Registered');
+
 -- --------------------------------------------------------
 
 --
@@ -589,27 +629,6 @@ CREATE TABLE `student_assignment` (
   `grade` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `student_assignment`
---
-
-INSERT INTO `student_assignment` (`student_assignment_id`, `assignment_id`, `floc`, `assignment_fdatein`, `fdesc`, `fname`, `student_id`, `grade`) VALUES
-(21, 13, 'admin/uploads/1414_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-24 11:59:28', 'fasfasfasfsfsafasf', 'safas', 93, ''),
-(22, 13, 'admin/uploads/5554_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-24 12:07:46', 'fasfaf', 'fdasf', 93, ''),
-(23, 13, 'admin/uploads/3202_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-24 12:08:21', 'fasf', 'fasf', 93, ''),
-(24, 13, 'admin/uploads/6535_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-24 12:09:19', 'fasf', 'saff', 93, ''),
-(25, 12, 'admin/uploads/8974_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-24 12:24:38', 'fgs', 'gs', 93, ''),
-(26, 13, 'admin/uploads/9035_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-24 12:51:44', 'q', 'q', 93, ''),
-(27, 13, 'admin/uploads/4503_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-24 12:52:44', 'fasfaf', 'fasf', 93, ''),
-(28, 13, 'admin/uploads/7827_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-24 12:54:20', 'ffsafsfafsaf', 'fsa', 93, ''),
-(29, 13, 'admin/uploads/6680_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-24 13:02:49', 'jkl', 'jkl', 93, ''),
-(30, 14, 'admin/uploads/1457_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-24 13:06:56', 'fasf', 'saf', 93, ''),
-(31, 16, 'admin/uploads/7151_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-25 10:39:52', 'test', 'my_assginment', 93, ''),
-(32, 17, 'admin/uploads/1918_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-11-25 15:54:19', 'q', 'q', 71, '95'),
-(33, 31, 'admin/uploads/7519_File_win_boot_screen_16_9_by_medi_dadu-d4s7dc1.gif', '2013-12-07 20:58:58', 'dad', 'das', 75, ''),
-(34, 20, 'admin/uploads/2416_File_about.php', '2014-01-14 08:51:53', 'Asssd', 'Assignment1', 136, ''),
-(35, 20, 'admin/uploads/5560_File_Chrysanthemum.jpg', '2014-01-14 08:52:22', 'sder', 'sfew', 136, '98');
-
 -- --------------------------------------------------------
 
 --
@@ -625,13 +644,6 @@ CREATE TABLE `student_backpack` (
   `fname` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `student_backpack`
---
-
-INSERT INTO `student_backpack` (`file_id`, `floc`, `fdatein`, `fdesc`, `student_id`, `fname`) VALUES
-(1, 'admin/uploads/2658_File_kevin.docx', '2014-02-13 11:11:50', 'test', 210, 'test');
-
 -- --------------------------------------------------------
 
 --
@@ -645,15 +657,6 @@ CREATE TABLE `student_class_quiz` (
   `student_quiz_time` varchar(100) NOT NULL,
   `grade` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `student_class_quiz`
---
-
-INSERT INTO `student_class_quiz` (`student_class_quiz_id`, `class_quiz_id`, `student_id`, `student_quiz_time`, `grade`) VALUES
-(1, 15, 107, '3600', '0 out of 2'),
-(2, 16, 136, '3600', '0 out of 0'),
-(3, 17, 219, '3600', '1 out of 1');
 
 -- --------------------------------------------------------
 
@@ -677,7 +680,7 @@ CREATE TABLE `subject` (
 --
 
 INSERT INTO `subject` (`subject_id`, `subject_code`, `subject_title`, `category`, `description`, `unit`, `Pre_req`, `semester`) VALUES
-(44, 'Ciencia', 'Ciencias Naturales', '', '<p>Ciencias Naturales para 9no Grado</p>\r\n', 4, '', '4to');
+(44, 'Ciencia', 'Ciencias Naturales', '', '', 2, '', '4to');
 
 -- --------------------------------------------------------
 
@@ -741,40 +744,9 @@ CREATE TABLE `teacher_class` (
 --
 
 INSERT INTO `teacher_class` (`teacher_class_id`, `teacher_id`, `class_id`, `subject_id`, `thumbnails`, `school_year`) VALUES
-(97, 9, 7, 15, 'admin/uploads/thumbnails.jpg', '2012-2013'),
-(135, 0, 22, 29, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(151, 5, 7, 14, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(152, 5, 8, 14, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(153, 5, 13, 36, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(157, 18, 15, 23, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(158, 18, 16, 23, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(159, 18, 12, 23, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(160, 18, 7, 29, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(165, 134, 15, 23, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(167, 12, 13, 35, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(168, 12, 14, 35, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(170, 12, 16, 24, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(172, 18, 13, 39, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(173, 18, 14, 39, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(174, 13, 12, 16, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(175, 13, 13, 16, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(176, 13, 14, 16, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(177, 14, 12, 32, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(178, 14, 13, 32, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(179, 14, 14, 32, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(180, 19, 13, 22, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(181, 12, 20, 24, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(183, 12, 18, 24, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(184, 12, 17, 25, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(185, 12, 7, 22, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(186, 15, 22, 22, 'admin/uploads/thumbnails.jpg', '2013-2014'),
-(187, 15, 24, 42, 'admin/uploads/thumbnails.jpg', '2019-2020'),
-(188, 5, 24, 43, 'admin/uploads/thumbnails.jpg', '2019-2020'),
-(189, 5, 24, 42, 'admin/uploads/thumbnails.jpg', '2021'),
-(190, 5, 25, 42, 'admin/uploads/thumbnails.jpg', '2021'),
-(191, 12, 26, 42, 'admin/uploads/thumbnails.jpg', '2021'),
 (192, 23, 29, 44, 'admin/uploads/thumbnails.jpg', '2021'),
-(193, 22, 30, 44, 'admin/uploads/thumbnails.jpg', '2021');
+(193, 22, 30, 44, 'admin/uploads/thumbnails.jpg', '2021'),
+(194, 23, 31, 44, 'admin/uploads/thumbnails.jpg', '2021');
 
 -- --------------------------------------------------------
 
@@ -809,7 +781,11 @@ INSERT INTO `teacher_class_announcements` (`teacher_class_announcements_id`, `co
 (41, '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/MybaTnzu9AA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', '15', 187, '2019-10-14 23:23:42'),
 (43, 'Video sobre como hicieron el canal perros :v\r\n\r\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iFUWvlfcLd4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>								', '5', 188, '2021-11-13 16:53:41'),
 (45, 'VIDEO REFERENTE AL CUERPO HUMANO\r\n\r\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/k1UZ4Lz1PHE\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', '5', 189, '2021-11-15 11:11:38'),
-(46, '<p>Parcial Ma&ntilde;ana</p>\r\n', '5', 189, '2021-11-15 20:28:38');
+(46, '<p>Parcial Ma&ntilde;ana</p>\r\n', '5', 189, '2021-11-15 20:28:38'),
+(47, '																<iframe width=\"400\" height=\"315\" src=\"https://www.youtube.com/embed/dHArUmSW4PQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>	\r\n\r\nMódulo #1 - Primer Video.															', '23', 192, '2021-11-17 10:12:02'),
+(49, '								<iframe width=\"400\" height=\"315\" src=\"https://www.youtube.com/embed/dg_ACMcLI0Q\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\r\n\r\nMódulo #1 - Segundo Video.								', '23', 192, '2021-11-17 10:17:10'),
+(50, '								<iframe width=\"400\" height=\"315\" src=\"https://www.youtube.com/embed/g5pWCzOVQOY\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\r\n\r\nMódulo #2 - Primer Video.								', '23', 192, '2021-11-17 10:19:40'),
+(51, '								<iframe width=\"400\" height=\"315\" src=\"https://www.youtube.com/embed/HeMEJOytEeU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>		\r\n\r\nMódulo #2 - Segundo Video.						', '23', 192, '2021-11-17 10:21:05');
 
 -- --------------------------------------------------------
 
@@ -976,63 +952,70 @@ INSERT INTO `user_log` (`user_log_id`, `username`, `login_date`, `logout_date`, 
 (63, 'jkev', '2014-01-16 14:42:02', '2016-10-11 13:08:54', 14),
 (64, 'jkev', '2014-01-17 09:16:17', '2016-10-11 13:08:54', 14),
 (65, 'jkev', '2014-01-17 13:25:51', '2016-10-11 13:08:54', 14),
-(66, 'admin', '2014-01-17 14:41:30', '2021-11-16 10:09:36', 15),
-(67, 'admin', '2014-01-17 15:56:32', '2021-11-16 10:09:36', 15),
-(68, 'admin', '2014-01-26 17:45:31', '2021-11-16 10:09:36', 15),
-(69, 'admin', '2014-02-13 10:45:17', '2021-11-16 10:09:36', 15),
-(70, 'admin', '2014-02-13 11:05:27', '2021-11-16 10:09:36', 15),
+(66, 'admin', '2014-01-17 14:41:30', '2021-11-17 17:07:34', 15),
+(67, 'admin', '2014-01-17 15:56:32', '2021-11-17 17:07:34', 15),
+(68, 'admin', '2014-01-26 17:45:31', '2021-11-17 17:07:34', 15),
+(69, 'admin', '2014-02-13 10:45:17', '2021-11-17 17:07:34', 15),
+(70, 'admin', '2014-02-13 11:05:27', '2021-11-17 17:07:34', 15),
 (71, 'jkev', '2014-02-13 11:16:48', '2016-10-11 13:08:54', 14),
-(72, 'admin', '2014-02-13 11:55:36', '2021-11-16 10:09:36', 15),
-(73, 'admin', '2014-02-13 12:32:38', '2021-11-16 10:09:36', 15),
-(74, 'admin', '2014-02-13 12:52:05', '2021-11-16 10:09:36', 15),
-(75, 'admin', '2014-02-13 13:04:35', '2021-11-16 10:09:36', 15),
+(72, 'admin', '2014-02-13 11:55:36', '2021-11-17 17:07:34', 15),
+(73, 'admin', '2014-02-13 12:32:38', '2021-11-17 17:07:34', 15),
+(74, 'admin', '2014-02-13 12:52:05', '2021-11-17 17:07:34', 15),
+(75, 'admin', '2014-02-13 13:04:35', '2021-11-17 17:07:34', 15),
 (76, 'jkev', '2014-02-13 14:35:27', '2016-10-11 13:08:54', 14),
-(77, 'admin', '2014-02-20 09:40:39', '2021-11-16 10:09:36', 15),
-(78, 'admin', '2014-02-20 09:42:21', '2021-11-16 10:09:36', 15),
-(79, 'admin', '2014-02-27 22:40:15', '2021-11-16 10:09:36', 15),
-(80, 'admin', '2014-02-28 13:12:52', '2021-11-16 10:09:36', 15),
-(81, 'admin', '2014-04-02 17:27:47', '2021-11-16 10:09:36', 15),
-(82, 'admin', '2014-04-03 15:29:38', '2021-11-16 10:09:36', 15),
-(83, 'admin', '2014-06-15 12:31:51', '2021-11-16 10:09:36', 15),
-(84, 'admin', '2016-10-11 12:18:53', '2021-11-16 10:09:36', 15),
+(77, 'admin', '2014-02-20 09:40:39', '2021-11-17 17:07:34', 15),
+(78, 'admin', '2014-02-20 09:42:21', '2021-11-17 17:07:34', 15),
+(79, 'admin', '2014-02-27 22:40:15', '2021-11-17 17:07:34', 15),
+(80, 'admin', '2014-02-28 13:12:52', '2021-11-17 17:07:34', 15),
+(81, 'admin', '2014-04-02 17:27:47', '2021-11-17 17:07:34', 15),
+(82, 'admin', '2014-04-03 15:29:38', '2021-11-17 17:07:34', 15),
+(83, 'admin', '2014-06-15 12:31:51', '2021-11-17 17:07:34', 15),
+(84, 'admin', '2016-10-11 12:18:53', '2021-11-17 17:07:34', 15),
 (85, 'jkev', '2016-10-11 13:08:31', '2016-10-11 13:08:54', 14),
-(86, 'admin', '2016-10-11 13:19:30', '2021-11-16 10:09:36', 15),
-(87, 'admin', '2016-10-26 15:15:51', '2021-11-16 10:09:36', 15),
-(88, 'admin', '2016-10-26 17:46:16', '2021-11-16 10:09:36', 15),
-(89, 'admin', '2016-10-26 17:55:41', '2021-11-16 10:09:36', 15),
-(90, 'admin', '2016-10-26 17:57:22', '2021-11-16 10:09:36', 15),
-(91, 'admin', '2016-10-26 17:59:37', '2021-11-16 10:09:36', 15),
-(92, 'admin', '2016-11-01 10:57:35', '2021-11-16 10:09:36', 15),
-(93, 'admin', '2016-11-01 10:59:23', '2021-11-16 10:09:36', 15),
-(94, 'admin', '2016-11-01 12:34:38', '2021-11-16 10:09:36', 15),
-(95, 'admin', '2016-11-01 12:54:24', '2021-11-16 10:09:36', 15),
-(96, 'admin', '2016-11-01 13:44:52', '2021-11-16 10:09:36', 15),
-(97, 'admin', '2019-04-17 12:18:10', '2021-11-16 10:09:36', 15),
-(98, 'admin', '2019-04-22 09:27:19', '2021-11-16 10:09:36', 15),
-(99, 'admin', '2019-10-14 23:15:45', '2021-11-16 10:09:36', 15),
-(100, 'admin', '2021-11-13 16:41:45', '2021-11-16 10:09:36', 15),
-(101, 'admin', '2021-11-13 16:47:16', '2021-11-16 10:09:36', 15),
-(102, 'admin', '2021-11-13 16:58:00', '2021-11-16 10:09:36', 15),
-(103, 'admin', '2021-11-13 17:04:28', '2021-11-16 10:09:36', 15),
-(104, 'admin', '2021-11-13 17:08:28', '2021-11-16 10:09:36', 15),
-(105, 'admin', '2021-11-13 17:08:28', '2021-11-16 10:09:36', 15),
-(106, 'admin', '2021-11-13 22:28:53', '2021-11-16 10:09:36', 15),
-(107, 'admin', '2021-11-13 22:44:34', '2021-11-16 10:09:36', 15),
-(108, 'admin', '2021-11-13 22:45:41', '2021-11-16 10:09:36', 15),
-(109, 'admin', '2021-11-14 12:05:26', '2021-11-16 10:09:36', 15),
-(110, 'admin', '2021-11-14 17:55:28', '2021-11-16 10:09:36', 15),
-(111, 'admin', '2021-11-14 18:07:02', '2021-11-16 10:09:36', 15),
-(112, 'admin', '2021-11-14 18:12:22', '2021-11-16 10:09:36', 15),
-(113, 'admin', '2021-11-14 18:33:31', '2021-11-16 10:09:36', 15),
-(114, 'admin', '2021-11-15 06:59:00', '2021-11-16 10:09:36', 15),
-(115, 'admin', '2021-11-15 09:37:14', '2021-11-16 10:09:36', 15),
-(116, 'admin', '2021-11-15 09:49:07', '2021-11-16 10:09:36', 15),
-(117, 'admin', '2021-11-16 07:10:15', '2021-11-16 10:09:36', 15),
-(118, 'admin', '2021-11-16 08:23:01', '2021-11-16 10:09:36', 15),
-(119, 'admin', '2021-11-16 08:34:01', '2021-11-16 10:09:36', 15),
-(120, 'admin', '2021-11-16 09:55:01', '2021-11-16 10:09:36', 15),
-(121, 'admin', '2021-11-16 10:09:13', '2021-11-16 10:09:36', 15),
-(122, 'admin', '2021-11-16 11:11:11', '', 15);
+(86, 'admin', '2016-10-11 13:19:30', '2021-11-17 17:07:34', 15),
+(87, 'admin', '2016-10-26 15:15:51', '2021-11-17 17:07:34', 15),
+(88, 'admin', '2016-10-26 17:46:16', '2021-11-17 17:07:34', 15),
+(89, 'admin', '2016-10-26 17:55:41', '2021-11-17 17:07:34', 15),
+(90, 'admin', '2016-10-26 17:57:22', '2021-11-17 17:07:34', 15),
+(91, 'admin', '2016-10-26 17:59:37', '2021-11-17 17:07:34', 15),
+(92, 'admin', '2016-11-01 10:57:35', '2021-11-17 17:07:34', 15),
+(93, 'admin', '2016-11-01 10:59:23', '2021-11-17 17:07:34', 15),
+(94, 'admin', '2016-11-01 12:34:38', '2021-11-17 17:07:34', 15),
+(95, 'admin', '2016-11-01 12:54:24', '2021-11-17 17:07:34', 15),
+(96, 'admin', '2016-11-01 13:44:52', '2021-11-17 17:07:34', 15),
+(97, 'admin', '2019-04-17 12:18:10', '2021-11-17 17:07:34', 15),
+(98, 'admin', '2019-04-22 09:27:19', '2021-11-17 17:07:34', 15),
+(99, 'admin', '2019-10-14 23:15:45', '2021-11-17 17:07:34', 15),
+(100, 'admin', '2021-11-13 16:41:45', '2021-11-17 17:07:34', 15),
+(101, 'admin', '2021-11-13 16:47:16', '2021-11-17 17:07:34', 15),
+(102, 'admin', '2021-11-13 16:58:00', '2021-11-17 17:07:34', 15),
+(103, 'admin', '2021-11-13 17:04:28', '2021-11-17 17:07:34', 15),
+(104, 'admin', '2021-11-13 17:08:28', '2021-11-17 17:07:34', 15),
+(105, 'admin', '2021-11-13 17:08:28', '2021-11-17 17:07:34', 15),
+(106, 'admin', '2021-11-13 22:28:53', '2021-11-17 17:07:34', 15),
+(107, 'admin', '2021-11-13 22:44:34', '2021-11-17 17:07:34', 15),
+(108, 'admin', '2021-11-13 22:45:41', '2021-11-17 17:07:34', 15),
+(109, 'admin', '2021-11-14 12:05:26', '2021-11-17 17:07:34', 15),
+(110, 'admin', '2021-11-14 17:55:28', '2021-11-17 17:07:34', 15),
+(111, 'admin', '2021-11-14 18:07:02', '2021-11-17 17:07:34', 15),
+(112, 'admin', '2021-11-14 18:12:22', '2021-11-17 17:07:34', 15),
+(113, 'admin', '2021-11-14 18:33:31', '2021-11-17 17:07:34', 15),
+(114, 'admin', '2021-11-15 06:59:00', '2021-11-17 17:07:34', 15),
+(115, 'admin', '2021-11-15 09:37:14', '2021-11-17 17:07:34', 15),
+(116, 'admin', '2021-11-15 09:49:07', '2021-11-17 17:07:34', 15),
+(117, 'admin', '2021-11-16 07:10:15', '2021-11-17 17:07:34', 15),
+(118, 'admin', '2021-11-16 08:23:01', '2021-11-17 17:07:34', 15),
+(119, 'admin', '2021-11-16 08:34:01', '2021-11-17 17:07:34', 15),
+(120, 'admin', '2021-11-16 09:55:01', '2021-11-17 17:07:34', 15),
+(121, 'admin', '2021-11-16 10:09:13', '2021-11-17 17:07:34', 15),
+(122, 'admin', '2021-11-16 11:11:11', '2021-11-17 17:07:34', 15),
+(123, 'admin', '2021-11-16 17:27:10', '2021-11-17 17:07:34', 15),
+(124, 'admin', '2021-11-17 09:16:01', '2021-11-17 17:07:34', 15),
+(125, 'admin', '2021-11-17 09:16:57', '2021-11-17 17:07:34', 15),
+(126, 'admin', '2021-11-17 10:01:18', '2021-11-17 17:07:34', 15),
+(127, 'admin', '2021-11-17 10:04:19', '2021-11-17 17:07:34', 15),
+(128, 'admin', '2021-11-17 11:40:08', '2021-11-17 17:07:34', 15),
+(129, 'admin', '2021-11-17 17:05:00', '2021-11-17 17:07:34', 15);
 
 --
 -- Índices para tablas volcadas
@@ -1244,7 +1227,7 @@ ALTER TABLE `user_log`
 -- AUTO_INCREMENT de la tabla `activity_log`
 --
 ALTER TABLE `activity_log`
-  MODIFY `activity_log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `activity_log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT de la tabla `answer`
@@ -1256,25 +1239,25 @@ ALTER TABLE `answer`
 -- AUTO_INCREMENT de la tabla `assignment`
 --
 ALTER TABLE `assignment`
-  MODIFY `assignment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `assignment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT de la tabla `class`
 --
 ALTER TABLE `class`
-  MODIFY `class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT de la tabla `class_quiz`
 --
 ALTER TABLE `class_quiz`
-  MODIFY `class_quiz_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `class_quiz_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT de la tabla `class_subject_overview`
 --
 ALTER TABLE `class_subject_overview`
-  MODIFY `class_subject_overview_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `class_subject_overview_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `content`
@@ -1292,13 +1275,13 @@ ALTER TABLE `department`
 -- AUTO_INCREMENT de la tabla `event`
 --
 ALTER TABLE `event`
-  MODIFY `event_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `event_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT de la tabla `files`
 --
 ALTER TABLE `files`
-  MODIFY `file_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=138;
+  MODIFY `file_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=150;
 
 --
 -- AUTO_INCREMENT de la tabla `message`
@@ -1316,7 +1299,7 @@ ALTER TABLE `message_sent`
 -- AUTO_INCREMENT de la tabla `notification`
 --
 ALTER TABLE `notification`
-  MODIFY `notification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `notification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- AUTO_INCREMENT de la tabla `notification_read`
@@ -1334,13 +1317,13 @@ ALTER TABLE `notification_read_teacher`
 -- AUTO_INCREMENT de la tabla `quiz`
 --
 ALTER TABLE `quiz`
-  MODIFY `quiz_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `quiz_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `quiz_question`
 --
 ALTER TABLE `quiz_question`
-  MODIFY `quiz_question_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `quiz_question_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT de la tabla `school_year`
@@ -1352,7 +1335,7 @@ ALTER TABLE `school_year`
 -- AUTO_INCREMENT de la tabla `student`
 --
 ALTER TABLE `student`
-  MODIFY `student_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=221;
+  MODIFY `student_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=228;
 
 --
 -- AUTO_INCREMENT de la tabla `student_assignment`
@@ -1394,13 +1377,13 @@ ALTER TABLE `teacher_backpack`
 -- AUTO_INCREMENT de la tabla `teacher_class`
 --
 ALTER TABLE `teacher_class`
-  MODIFY `teacher_class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=194;
+  MODIFY `teacher_class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=195;
 
 --
 -- AUTO_INCREMENT de la tabla `teacher_class_announcements`
 --
 ALTER TABLE `teacher_class_announcements`
-  MODIFY `teacher_class_announcements_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `teacher_class_announcements_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT de la tabla `teacher_class_student`
@@ -1430,7 +1413,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `user_log`
 --
 ALTER TABLE `user_log`
-  MODIFY `user_log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123;
+  MODIFY `user_log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=130;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
